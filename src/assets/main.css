@@ -1,0 +1,11 @@
+@import "./base.css";
+
+body {
+  overflow   : hidden;
+  /* overflow: overlay; */
+}
+
+#app {
+  max-width: 48rem;
+  margin   : 0 auto;
+}
