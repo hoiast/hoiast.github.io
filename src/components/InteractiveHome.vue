@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import TriangleQuartet from "@/components/TriangleQuartet.vue";
-import { reactive, ref, onMounted, nextTick } from "vue";
+import { reactive, ref, onMounted } from "vue";
 import { useStorage } from "@/composables/useStorage";
 import { useEventStore } from "@/stores/event";
 import { usePuzzleStore } from "@/stores/puzzle";

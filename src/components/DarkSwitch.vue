@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { ref, watch } from "vue";
 // Default to dark mode if the user has dark mode enabled.
 const dark = ref(window.matchMedia("(prefers-color-scheme: dark)").matches);

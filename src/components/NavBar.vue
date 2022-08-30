@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onUpdated, watch } from "vue";
+import { watch } from "vue";
 import { useEventStore } from "@/stores/event";
 import { usePuzzleStore } from "@/stores/puzzle";
 import { useStorage } from "@/composables/useStorage";
