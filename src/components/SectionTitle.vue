@@ -27,13 +27,8 @@ const props = defineProps({
     default: 1, //in pixels
   },
 });
-const disablingColor = "#202020";
 const lgColorString = computed(() => {
-  return `linear-gradient(${
-    props.isDisabled
-      ? `${disablingColor},${disablingColor}`
-      : props.colorPattern.join(",")
-  })`;
+  return `linear-gradient(${props.colorPattern.join(",")})`;
 });
 </script>
 <template>
@@ -43,7 +38,6 @@ const lgColorString = computed(() => {
         :rotationalStates="rotationalStates"
         :isClickDisabled="true"
         :isColorDisabled="isDisabled"
-        :disablingColor="disablingColor"
         :colorPattern="colorPattern"
         :size="0.25"
         class=""

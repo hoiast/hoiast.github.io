@@ -13,7 +13,7 @@ const lgColorString = computed(() => {
       :rotationalStates="[4, 0, 0, 4]"
       :colorPattern="colorPattern"
     />
-    <div class="px-6 text-[#D2] text-lg flex flex-col space-y-8">
+    <div class="px-6 color-base text-lg flex flex-col space-y-8">
       <div>
         <div class="flex items-center space-x-2">
           <p class="text-2xl">ExoSim</p>

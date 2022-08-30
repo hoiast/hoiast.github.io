@@ -14,7 +14,7 @@ const lgColorString = computed(() => {
       :rotationalStates="[0, 6, 6, 2]"
       :colorPattern="colorPattern"
     />
-    <div class="px-6 text-[#D2] text-lg">
+    <div class="px-6 color-base text-lg">
       <div class="flex flex-col space-y-8">
         <div>
           <GradientText class="text-3xl mb-4" :colorPattern="colorPattern">
@@ -45,7 +45,7 @@ const lgColorString = computed(() => {
                 At LUCA, I worked as the main developer of
                 <a
                   href="https://roversandbeyond.com.br/"
-                  class="px-1 rounded-lg cursor-pointer"
+                  class="px-1 rounded-lg cursor-pointer text-white"
                   :style="`background-image: ${lgColorString}`"
                   >Rovers & Beyond</a
                 >, a gamified experience for space missions on Mars. It includes
@@ -77,7 +77,7 @@ const lgColorString = computed(() => {
                 I worked on the
                 <a
                   href="https://www.pdynamo.org/"
-                  class="px-1 rounded-lg cursor-pointer"
+                  class="px-1 rounded-lg cursor-pointer text-white"
                   :style="`background-image: ${lgColorString}`"
                   >pDynamo</a
                 >

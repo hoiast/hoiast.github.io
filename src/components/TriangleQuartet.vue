@@ -11,10 +11,7 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
-  disablingColor: {
-    type: String,
-    default: "#D9D9D9",
-  },
+
   isClickDisabled: {
     type: Boolean,
     default: false,
@@ -69,7 +66,6 @@ const quartetSpacing = computed(() => {
           $emit('update:rotationalStates', rotationalStates)
         "
         :transformDuration="transformDuration"
-        :disablingColor="disablingColor"
       />
     </div>
   </div>

@@ -12,7 +12,7 @@ const props = defineProps({
   },
   disablingColor: {
     type: String,
-    default: "#D9D9D9",
+    default: "#777777",
   },
   isClickDisabled: {
     type: Boolean,
@@ -78,11 +78,11 @@ const innerTriangleMarginTopInPixels = computed(() => {
   <div
     @click="rotate"
     :class="[
-      `transform rotate triangle transition duration-${transformDuration} ease-in-out`,
+      `transform rotate triangle .transition-transform duration-${transformDuration} ease-in-out`,
       { 'cursor-pointer': !isClickDisabled },
     ]"
   >
-    <div></div>
+    <div class="bg-base transition-base"></div>
   </div>
 </template>
 <style scoped>
@@ -97,7 +97,6 @@ const innerTriangleMarginTopInPixels = computed(() => {
 }
 .triangle div {
   margin-top: v-bind(innerTriangleMarginTopInPixels);
-  background: #050505;
   clip-path: polygon(50% 0, 100% 100%, 0 100%);
   width: v-bind(innerTriangleSizeInPixels);
   height: v-bind(innerTriangleSizeInPixels);

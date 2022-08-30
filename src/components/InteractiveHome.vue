@@ -63,18 +63,12 @@ onMounted(() => {
 const rotationalStates = ref([0, 0, 0, 0]);
 // const verifyTargets = (rotationalStates: number[]) => {
 const verifyTargets = () => {
-  nextTick(() => {
-    console.log(rotationalStates.value[0]);
-  });
-
   targets.forEach((target) => {
     if (
       JSON.stringify(target.rotationalStates) ===
       JSON.stringify(rotationalStates.value)
     ) {
-      console.log("goal accomplished");
       arePuzzlesDisabled.value[target.key - 1] = false;
-      // target.isDisabled = false;
     }
   });
 

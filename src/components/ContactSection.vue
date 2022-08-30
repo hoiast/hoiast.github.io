@@ -14,7 +14,7 @@ const lgColorString = computed(() => {
       :dividerHeight="2"
       :colorPattern="colorPattern"
     />
-    <div class="mb-10 px-6 text-[#D2] text-3xl">
+    <div class="mb-10 px-6 color-base text-3xl">
       <div class="mb-2 flex items-center">
         <div
           class="i-mdi-email-outline"

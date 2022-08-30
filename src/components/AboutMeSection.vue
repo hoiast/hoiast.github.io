@@ -21,7 +21,7 @@ const colorPattern = ["#65B947", "#27548E"];
         </GradientBorder>
 
         <div
-          class="text-[#D2] text-lg col-span-1 sm:col-span-2 text-left sm:text-justify indent"
+          class="color-base text-lg col-span-1 sm:col-span-2 text-left sm:text-justify indent"
         >
           <p>
             Hi, I am Murilo Hoias Teixeira, Mumu for short. A father, husband,

@@ -15,7 +15,7 @@ const lgColorString = computed(() => {
       :rotationalStates="[6, 2, 2, 0]"
       :colorPattern="colorPattern"
     />
-    <div class="px-6 text-[#D2] text-lg">
+    <div class="px-6 color-base text-lg">
       <div class="flex flex-col space-y-4">
         <div>
           <GradientText class="py-1 text-3xl mb-4" :colorPattern="colorPattern">

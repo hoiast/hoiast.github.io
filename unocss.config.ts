@@ -3,18 +3,13 @@ import presetIcons from "@unocss/preset-icons";
 import { presetScrollbar } from "unocss-preset-scrollbar";
 
 export default {
+  shortcuts: {
+    "bg-base": "bg-white dark:bg-[#050505]",
+    "bg-disabled-base": "text-[#050505] dark:text-gray-300",
+    "color-base": "text-[#050505] dark:text-gray-300",
+    "transition-base": "transition duration-500",
+  },
   presets: [presetUno(), presetIcons(), presetScrollbar()],
-  variants: [
-    // hover:
-    (matcher: string) => {
-      if (!matcher.startsWith("hover:")) return matcher;
-      return {
-        // slice `hover:` prefix and passed to the next variants and rules
-        matcher: matcher.slice(6),
-        selector: (s: string) => `${s}:hover`,
-      };
-    },
-  ],
   safelist: [
     "space-x-0.5",
     "space-y-0.5",
