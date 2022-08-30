@@ -23,7 +23,7 @@ const lgColorString = computed(() => {
           >
             <div class="mb-2 flex items-center">
               <div
-                class="i-mdi-web"
+                class="i-carbon-launch"
                 :style="`background-image: ${lgColorString}`"
               ></div>
             </div>
@@ -34,7 +34,7 @@ const lgColorString = computed(() => {
           >
             <div class="mb-2 flex items-center">
               <div
-                class="i-mdi-github"
+                class="i-carbon-logo-github"
                 :style="`background-image: ${lgColorString}`"
               ></div>
             </div>
@@ -55,7 +55,7 @@ const lgColorString = computed(() => {
           >
             <div class="mb-2 flex items-center">
               <div
-                class="i-mdi-github"
+                class="i-carbon-logo-github"
                 :style="`background-image: ${lgColorString}`"
               ></div>
             </div>
@@ -73,7 +73,7 @@ const lgColorString = computed(() => {
           <a href="https://www.pdynamo.org/" class="text-lg text-[#FC0D46]">
             <div class="mb-2 flex items-center">
               <div
-                class="i-mdi-web"
+                class="i-carbon-launch"
                 :style="`background-image: ${lgColorString}`"
               ></div>
             </div>

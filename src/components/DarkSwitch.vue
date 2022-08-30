@@ -20,9 +20,6 @@ const toggleDark = () => {
 </script>
 <template>
   <div class="flex items-center space-x-2 color-base cursor-pointer">
-    <div
-      :class="dark ? 'i-mdi-weather-night' : 'i-mdi-weather-sunny'"
-      @click="toggleDark"
-    ></div>
+    <div :class="'i-carbon-sun dark:i-carbon-moon'" @click="toggleDark"></div>
   </div>
 </template>

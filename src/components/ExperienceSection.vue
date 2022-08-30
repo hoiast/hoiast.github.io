@@ -32,7 +32,7 @@ const lgColorString = computed(() => {
                   >
                     <div class="mb-2 flex items-center">
                       <div
-                        class="i-mdi-web"
+                        class="i-carbon-launch"
                         :style="`background-image: ${lgColorString}`"
                       ></div>
                     </div>
@@ -64,7 +64,7 @@ const lgColorString = computed(() => {
                   >
                     <div class="mb-2 flex items-center">
                       <div
-                        class="i-mdi-web"
+                        class="i-carbon-launch"
                         :style="`background-image: ${lgColorString}`"
                       ></div>
                     </div>
@@ -104,7 +104,7 @@ const lgColorString = computed(() => {
                 <a href="https://dx.doi.org/10.1039/c9ra01681c" class="text-lg">
                   <div class="mb-2 flex items-center">
                     <div
-                      class="i-mdi-book-open-page-variant-outline"
+                      class="i-carbon-book"
                       :style="`background-image: ${lgColorString}`"
                     ></div>
                   </div>
@@ -131,7 +131,7 @@ const lgColorString = computed(() => {
                 >
                   <div class="mb-2 flex items-center">
                     <div
-                      class="i-mdi-book-open-page-variant-outline"
+                      class="i-carbon-book"
                       :style="`background-image: ${lgColorString}`"
                     ></div>
                   </div>
@@ -156,7 +156,7 @@ const lgColorString = computed(() => {
                 >
                   <div class="mb-2 flex items-center">
                     <div
-                      class="i-mdi-book-open-page-variant-outline"
+                      class="i-carbon-book"
                       :style="`background-image: ${lgColorString}`"
                     ></div>
                   </div>

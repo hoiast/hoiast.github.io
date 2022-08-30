@@ -17,14 +17,14 @@ const lgColorString = computed(() => {
     <div class="mb-10 px-6 color-base text-3xl">
       <div class="mb-2 flex items-center">
         <div
-          class="i-mdi-email-outline"
+          class="i-carbon-email"
           :style="`background-image: ${lgColorString}`"
         ></div>
         <p class="ml-4 text-2xl sm:text-3xl">murilohoias@gmail.com</p>
       </div>
       <div class="mb-2 flex items-center">
         <div
-          class="i-mdi-discord"
+          class="i-carbon-logo-discord"
           :style="`background-image: ${lgColorString}`"
         ></div>
         <p class="ml-4 text-2xl sm:text-3xl">Mumu#6876</p>
@@ -32,7 +32,7 @@ const lgColorString = computed(() => {
       <a href="https://github.com/hoiast">
         <div class="mb-2 flex items-center">
           <div
-            class="i-mdi-github"
+            class="i-carbon-logo-github"
             :style="`background-image: ${lgColorString}`"
           ></div>
           <p class="ml-4 text-2xl sm:text-3xl">hoiast</p>

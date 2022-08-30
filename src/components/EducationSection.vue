@@ -40,7 +40,7 @@ const lgColorString = computed(() => {
                 >
                   <div class="mb-2 flex items-center">
                     <div
-                      class="i-mdi-book-open-page-variant-outline"
+                      class="i-carbon-book"
                       :style="`background-image: ${lgColorString}`"
                     ></div>
                   </div>

@@ -22,26 +22,17 @@ watch(puzzleStore, () => {
 </script>
 <template>
   <nav class="h-[10vh] fixed w-full max-w-3xl p-4 bg-base transition-base z-10">
-    <div class="flex justify-between text-4xl sm:text-5xl color-base">
-      <div class="i-mdi-help cursor-pointer" @click="bounce" />
+    <div class="flex justify-between text-4xl color-base">
+      <div class="i-carbon-help cursor-pointer" @click="bounce" />
       <div
         class="flex cursor-pointer"
         @click="toggleLock"
         v-if="enableAutomaticUnlock"
       >
-        <div :class="'i-mdi-lock-reset'" />
+        <div :class="'i-carbon-reset-alt'" />
       </div>
       <DarkSwitch />
     </div>
   </nav>
-  <!--
-  <div class="i-mdi-menu" /> 
-  <div class="i-mdi-github text-orange-400" />
-  <div class="i-mdi-translate text-orange-400" />
-  <div class="i-mdi-weather-sunny text-orange-400" />
-  <div class="i-mdi-weather-night text-orange-400" />
-  <div class="i-mdi-lock text-orange-400" />
-  <div class="i-mdi-lock-open text-orange-400" />
-  -->
 </template>
 <style scoped></style>
