@@ -17,7 +17,11 @@ const colorPattern = ["#65B947", "#27548E"];
           class="w-44 col-span-1 rounded-full"
           :colorPattern="colorPattern"
         >
-          <img src="/assets/profilePhoto.jpg" class="rounded-full" />
+          <img
+            src="/assets/profilePhoto.jpg"
+            class="rounded-full"
+            alt="Profile photo of Murilo Hoias Teixeira. A thirty years old bearded male with dark short hair. He uses ear plugs and has head and neck tattoos. He is wearing a red sweatshirt."
+          />
         </GradientBorder>
 
         <div

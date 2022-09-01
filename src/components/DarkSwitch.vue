@@ -19,7 +19,7 @@ const toggleDark = () => {
 };
 </script>
 <template>
-  <div class="flex items-center space-x-2 color-base cursor-pointer">
+  <div class="flex items-center space-x-4 color-base cursor-pointer">
     <div :class="'i-carbon-sun dark:i-carbon-moon'" @click="toggleDark"></div>
   </div>
 </template>

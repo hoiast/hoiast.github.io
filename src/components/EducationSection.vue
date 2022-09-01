@@ -32,11 +32,12 @@ const lgColorString = computed(() => {
                 PhD Computational Biochemistry and Biophysics
               </p>
               <p class="text-base">Mar. 2015 - Jul. 2020</p>
-              <div class="flex space-x-2">
+              <div class="flex space-x-4">
                 <p class="text-base">University of São Paulo - Brazil</p>
                 <a
                   href="https://www.teses.usp.br/teses/disponiveis/46/46131/tde-23092021-093730/en.php"
                   class="text-lg"
+                  aria-label="My phD thesis available at www.teses.usp.br"
                 >
                   <div class="mb-2 flex items-center">
                     <div

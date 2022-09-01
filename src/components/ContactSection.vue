@@ -29,7 +29,7 @@ const lgColorString = computed(() => {
         ></div>
         <p class="ml-4 text-2xl sm:text-3xl">Mumu#6876</p>
       </div>
-      <a href="https://github.com/hoiast">
+      <a href="https://github.com/hoiast" aria-label="hoiast's Github page">
         <div class="mb-2 flex items-center">
           <div
             class="i-carbon-logo-github"

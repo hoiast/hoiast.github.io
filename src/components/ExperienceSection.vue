@@ -24,11 +24,12 @@ const lgColorString = computed(() => {
             <div class="flex flex-col space-y-2">
               <p class="text-2xl">Full Stack Developer</p>
               <div class="text-base">
-                <div class="flex items-center space-x-2">
+                <div class="flex items-center space-x-4">
                   <p>LUCA - Ciência para Educar</p>
                   <a
                     href="https://lucaeducar.com.br/"
                     class="text-lg text-[#FC0D46]"
+                    aria-label="LUCA organization website"
                   >
                     <div class="mb-2 flex items-center">
                       <div
@@ -47,6 +48,7 @@ const lgColorString = computed(() => {
                   href="https://roversandbeyond.com.br/"
                   class="px-1 rounded-lg cursor-pointer text-white"
                   :style="`background-image: ${lgColorString}`"
+                  aria-label="Rovers&Beyond product website"
                   >Rovers & Beyond</a
                 >, a gamified experience for space missions on Mars. It includes
                 ludic quizzes, training simulators and remote driving sessions
@@ -56,11 +58,12 @@ const lgColorString = computed(() => {
             <div class="flex flex-col space-y-2">
               <p class="text-2xl">Visiting Researcher</p>
               <div class="text-base">
-                <div class="flex items-center space-x-2">
+                <div class="flex items-center space-x-4">
                   <p>Institut Laue-Langevin - Theory Group</p>
                   <a
                     href="https://www.ill.eu/users/scientific-groups/theory"
                     class="text-lg text-[#FC0D46]"
+                    aria-label="Theory Group page at https://www.ill.eu/"
                   >
                     <div class="mb-2 flex items-center">
                       <div
@@ -79,6 +82,7 @@ const lgColorString = computed(() => {
                   href="https://www.pdynamo.org/"
                   class="px-1 rounded-lg cursor-pointer text-white"
                   :style="`background-image: ${lgColorString}`"
+                  aria-label="pDynamo library website"
                   >pDynamo</a
                 >
                 library, migrating its codebase to Python 3 and implementing new
@@ -99,9 +103,14 @@ const lgColorString = computed(() => {
               </p>
 
               <p>Teixeira, M. H. and Arantes, G. M.</p>
-              <div class="flex items-center space-x-2">
+              <div class="flex items-center space-x-4">
                 <p>RSC Advances, v. 9, p. 16892-16899, 2019</p>
-                <a href="https://dx.doi.org/10.1039/c9ra01681c" class="text-lg">
+                <a
+                  href="https://dx.doi.org/10.1039/c9ra01681c"
+                  class="text-lg"
+                  aria-label="Scientific journal link for the article entitled: Effects of lipid composition on membrane distribution and
+                permeability of natural quinones"
+                >
                   <div class="mb-2 flex items-center">
                     <div
                       class="i-carbon-book"
@@ -128,6 +137,7 @@ const lgColorString = computed(() => {
                 <a
                   href="https://dx.doi.org/10.1021/acs.jcim.9b00881"
                   class="text-lg"
+                  aria-label="Scientific journal link for the article entitled: Modeling the Hydrolysis of Iron-Sulfur Clusters"
                 >
                   <div class="mb-2 flex items-center">
                     <div
@@ -153,6 +163,8 @@ const lgColorString = computed(() => {
                 <a
                   href="https://dx.doi.org/10.1016/j.bbabio.2019.05.004"
                   class="text-lg"
+                  aria-label="Scientific journal link for the article entitled: Balanced internal hydration discriminates substrate binding to
+                respiratory complex I"
                 >
                   <div class="mb-2 flex items-center">
                     <div

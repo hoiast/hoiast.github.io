@@ -15,11 +15,12 @@ const lgColorString = computed(() => {
     />
     <div class="px-6 color-base text-lg flex flex-col space-y-8">
       <div>
-        <div class="flex items-center space-x-2">
+        <div class="flex items-center space-x-4">
           <p class="text-2xl">ExoSim</p>
           <a
             href="https://hoiast.github.io/ExoSim/"
             class="text-lg text-[#FC0D46]"
+            aria-label="ExoSim online demo on GitHub Pages"
           >
             <div class="mb-2 flex items-center">
               <div
@@ -31,6 +32,7 @@ const lgColorString = computed(() => {
           <a
             href="https://github.com/hoiast/ExoSim"
             class="text-lg text-[#FC0D46]"
+            aria-label="GitHub repository page for ExoSim"
           >
             <div class="mb-2 flex items-center">
               <div
@@ -47,11 +49,12 @@ const lgColorString = computed(() => {
         </p>
       </div>
       <div>
-        <div class="flex items-center space-x-2">
+        <div class="flex items-center space-x-4">
           <p class="text-2xl">Marvelmind.js</p>
           <a
             href="https://github.com/hoiast/marvelmind.js"
             class="text-lg text-[#FC0D46]"
+            aria-label="GitHub repository page for marvelmind.js"
           >
             <div class="mb-2 flex items-center">
               <div
@@ -68,9 +71,13 @@ const lgColorString = computed(() => {
       </div>
 
       <div>
-        <div class="flex items-center space-x-2">
+        <div class="flex items-center space-x-4">
           <p class="text-2xl">pDynamo</p>
-          <a href="https://www.pdynamo.org/" class="text-lg text-[#FC0D46]">
+          <a
+            href="https://www.pdynamo.org/"
+            class="text-lg text-[#FC0D46]"
+            aria-label="pDynamo library website"
+          >
             <div class="mb-2 flex items-center">
               <div
                 class="i-carbon-launch"
