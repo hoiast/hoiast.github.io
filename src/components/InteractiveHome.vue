@@ -78,7 +78,7 @@ const verifyGoal = () => {
   if (arePuzzlesDisabled.value.every((element: boolean) => element === false)) {
     puzzleStore.isUnlocked = true;
     rotationalStates.value = [7, 1, 5, 3];
-    document.body.style.overflow = "overlay";
+    document.body.style.overflow = "auto";
   } else {
     puzzleStore.isUnlocked = false;
     document.body.style.overflow = "hidden";

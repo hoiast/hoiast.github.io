@@ -54,41 +54,51 @@ const rotate = () => {
 const rotationDegrees = computed(() => {
   return `${unlimitedRotationalState.value * 45}deg`;
 });
+
 const triangleColor = computed(() => {
-  return `linear-gradient(${
-    props.isColorDisabled
-      ? `${props.disablingColor},${props.disablingColor}`
-      : props.colorPattern.join(",")
-  })`;
+  return props.isColorDisabled
+    ? new Array(2).fill(props.disablingColor)
+    : props.colorPattern;
 });
+const gradientUUID = crypto.randomUUID();
 const outerTriangleSizeInPixels = computed(() => {
   return `${props.size * 10}vh`;
-  // return `${props.size * 100}px`;
 });
 const innerTriangleSizeInPixels = computed(() => {
   return `${props.size * 8}vh`;
-  // return `${props.size * 85}px`;
 });
 const innerTriangleMarginTopInPixels = computed(() => {
-  return `${props.size * 0.7}vh`;
-  // return `${props.size * 6}px`;
+  return `${props.size * 0.5}vh`;
 });
 </script>
 <template>
   <div
     @click="rotate"
     :class="[
-      `transform rotate triangle .transition-transform duration-${transformDuration} ease-in-out`,
+      `transform triangle relative rotate .transition-transform duration-${transformDuration} ease-in-out`,
       { 'cursor-pointer': !isClickDisabled },
     ]"
   >
-    <div class="bg-base transition-base"></div>
+    <svg viewBox="0 0 10 10" preserveAspectRatio="none">
+      <defs>
+        <linearGradient :id="gradientUUID" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop
+            v-for="(color, index) in triangleColor"
+            :key="index"
+            :offset="`${(index * 100) / (triangleColor.length - 1)}%`"
+            :stop-color="color"
+          />
+        </linearGradient>
+      </defs>
+      <polygon :fill="`url(#${gradientUUID})`" points="5 0 10 10 0 10" />
+    </svg>
+    <div class="absolute">
+      <div class="bg-base transition-base"></div>
+    </div>
   </div>
 </template>
 <style scoped>
 .triangle {
-  background-image: v-bind(triangleColor);
-  clip-path: polygon(50% 0, 100% 100%, 0 100%);
   width: v-bind(outerTriangleSizeInPixels);
   height: v-bind(outerTriangleSizeInPixels);
   display: flex;
