@@ -23,11 +23,6 @@ const lgColorString = computed(() => {
           </GradientText>
           <div class="flex flex-col space-y-2">
             <div>
-              <p class="text-2xl">Bachelor of Science Degree in Chemistry</p>
-              <p class="text-base">Mar. 2011 - Dez. 2014</p>
-              <p class="text-base">University of São Paulo - Brazil</p>
-            </div>
-            <div>
               <p class="text-2xl">
                 PhD Computational Biochemistry and Biophysics
               </p>
@@ -47,6 +42,11 @@ const lgColorString = computed(() => {
                   </div>
                 </a>
               </div>
+            </div>
+            <div>
+              <p class="text-2xl">Bachelor of Science Degree in Chemistry</p>
+              <p class="text-base">Mar. 2011 - Dez. 2014</p>
+              <p class="text-base">University of São Paulo - Brazil</p>
             </div>
           </div>
         </div>
