@@ -16,3 +16,25 @@ body {
   -webkit-font-smoothing : antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.academicons-lattes {
+  --un-icon        : url('/assets/lattes.svg');
+  mask             : var(--un-icon) no-repeat;
+  mask-size        : 100% 100%;
+  -webkit-mask     : var(--un-icon) no-repeat;
+  -webkit-mask-size: 100% 100%;
+  background-color : currentColor;
+  width            : 1em;
+  height           : 1em;
+}
+
+.academicons-lattes-square {
+  --un-icon        : url('/assets/lattes-square.svg');
+  mask             : var(--un-icon) no-repeat;
+  mask-size        : 100% 100%;
+  -webkit-mask     : var(--un-icon) no-repeat;
+  -webkit-mask-size: 100% 100%;
+  background-color : currentColor;
+  width            : 1em;
+  height           : 1em;
+}

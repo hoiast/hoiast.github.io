@@ -9,7 +9,7 @@ const lgColorString = computed(() => {
 <template>
   <section>
     <SectionTitle
-      :title="'How to Reach me'"
+      :title="'Contact Info and Links'"
       :rotationalStates="[7, 1, 5, 3]"
       :dividerHeight="2"
       :colorPattern="colorPattern"
@@ -29,15 +29,64 @@ const lgColorString = computed(() => {
         ></div>
         <p class="ml-4 text-2xl sm:text-3xl">Mumu#6876</p>
       </div>
-      <a href="https://github.com/hoiast" aria-label="hoiast's Github page">
-        <div class="mb-2 flex items-center">
-          <div
-            class="i-carbon-logo-github"
-            :style="`background-image: ${lgColorString}`"
-          ></div>
-          <p class="ml-4 text-2xl sm:text-3xl">hoiast</p>
+
+      <div class="mb-2 flex items-center">
+        <div
+          class="i-carbon-logo-github"
+          :style="`background-image: ${lgColorString}`"
+        ></div>
+        <div class="flex items-center space-x-2 ml-4">
+          <p class="text-2xl sm:text-3xl">Github</p>
+          <a
+            href="https://github.com/hoiast"
+            class="px-1 rounded-lg cursor-pointer text-white"
+            aria-label="hoiast's Github page"
+          >
+            <div
+              class="i-carbon-launch"
+              :style="`background-image: ${lgColorString}`"
+            ></div
+          ></a>
         </div>
-      </a>
+      </div>
+      <div class="mb-2 flex items-center">
+        <div
+          class="i-carbon-logo-linkedin"
+          :style="`background-image: ${lgColorString}`"
+        ></div>
+        <div class="flex items-center space-x-2 ml-4">
+          <p class="text-2xl sm:text-3xl">LinkedIn</p>
+          <a
+            href="https://www.linkedin.com/in/murilohoias/"
+            class="px-1 rounded-lg cursor-pointer text-white"
+            aria-label="LinkedIn user page"
+          >
+            <div
+              class="i-carbon-launch"
+              :style="`background-image: ${lgColorString}`"
+            ></div
+          ></a>
+        </div>
+      </div>
+      <div class="mb-2 flex items-center">
+        <div
+          class="academicons-lattes"
+          :style="`background-image: ${lgColorString}`"
+        ></div>
+        <div class="flex items-center space-x-2 ml-4">
+          <p class="text-2xl sm:text-3xl">Lattes</p>
+          <a
+            href="http://lattes.cnpq.br/4928822491567061"
+            class="px-1 rounded-lg cursor-pointer text-white"
+            aria-label="Lattes curriculum page"
+          >
+            <div
+              class="i-carbon-launch"
+              :style="`background-image: ${lgColorString}`"
+            ></div
+          ></a>
+        </div>
+      </div>
     </div>
   </section>
 </template>
