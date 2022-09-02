@@ -11,11 +11,13 @@ const lgColorString = computed(() => {
 });
 </script>
 <template>
-  <div class="flex items-baseline space-x-4">
-    <div
-      class="w-2 h-2 rounded-full"
-      :style="`background-image: ${lgColorString}`"
-    ></div>
+  <div class="flex space-x-2">
+    <div class="pt-1">
+      <div
+        class="w-6 h-6 i-carbon-caret-right"
+        :style="`background-image: ${lgColorString}`"
+      ></div>
+    </div>
     <p>
       <slot />
     </p>

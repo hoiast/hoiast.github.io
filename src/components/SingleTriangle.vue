@@ -70,12 +70,16 @@ const innerTriangleSizeInPixels = computed(() => {
 const innerTriangleMarginTopInPixels = computed(() => {
   return `${props.size * 0.5}vh`;
 });
+const paddingToAdjustRotationCenter = computed(() => {
+  return `${1 * props.size}rem`;
+});
 </script>
 <template>
   <div
     @click="rotate"
     :class="[
       `transform triangle relative rotate .transition-transform duration-${transformDuration} ease-in-out`,
+      { paddingToAdjustRotationCenter: rotationalState % 2 === 0 },
       { 'cursor-pointer': !isClickDisabled },
     ]"
   >
@@ -113,5 +117,8 @@ const innerTriangleMarginTopInPixels = computed(() => {
 }
 .rotate {
   --un-rotate: v-bind(rotationDegrees);
+}
+.paddingToAdjustRotationCenter {
+  padding-bottom: v-bind(paddingToAdjustRotationCenter);
 }
 </style>

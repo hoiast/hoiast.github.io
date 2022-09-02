@@ -11,6 +11,8 @@ export default {
   },
   presets: [presetUno(), presetIcons(), presetScrollbar()],
   safelist: [
+    "pb-4",
+    "pb-1",
     "space-x-0.5",
     "space-y-0.5",
     "space-x-1",

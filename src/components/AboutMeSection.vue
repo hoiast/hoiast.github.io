@@ -14,12 +14,12 @@ const colorPattern = ["#65B947", "#27548E"];
     <div class="px-6">
       <div class="grid grid-cols-1 sm:grid-cols-3 items-center">
         <GradientBorder
-          class="w-44 col-span-1 rounded-full"
+          class="w-46 h-46 col-span-1 relative flex justify-center items-center"
           :colorPattern="colorPattern"
         >
           <img
             src="/assets/profilePhoto.jpg"
-            class="rounded-full"
+            class="w-44"
             alt="Profile photo of Murilo Hoias Teixeira. A thirty years old bearded male with dark short hair. He uses ear plugs and has head and neck tattoos. He is wearing a red sweatshirt."
           />
         </GradientBorder>
