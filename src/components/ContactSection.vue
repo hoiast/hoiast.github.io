@@ -9,7 +9,7 @@ const lgColorString = computed(() => {
 <template>
   <section>
     <SectionTitle
-      :title="'Contact Info and Links'"
+      :title="'Contact and Links'"
       :rotationalStates="[7, 1, 5, 3]"
       :dividerHeight="2"
       :colorPattern="colorPattern"
@@ -29,17 +29,18 @@ const lgColorString = computed(() => {
         ></div>
         <p class="ml-4 text-2xl sm:text-3xl">Mumu#6876</p>
       </div>
-
-      <div class="mb-2 flex items-center">
-        <div
-          class="i-carbon-logo-github"
-          :style="`background-image: ${lgColorString}`"
-        ></div>
-        <div class="flex items-center space-x-2 ml-4">
-          <p class="text-2xl sm:text-3xl">Github</p>
+      <div class="grid grid-cols-1 w-fit">
+        <div class="mb-2 flex justify-between">
+          <div class="flex items-center">
+            <div
+              class="i-carbon-logo-github"
+              :style="`background-image: ${lgColorString}`"
+            ></div>
+            <p class="ml-4 text-2xl sm:text-3xl">Github</p>
+          </div>
           <a
             href="https://github.com/hoiast"
-            class="px-1 rounded-lg cursor-pointer text-white"
+            class="px-1 rounded-lg cursor-pointer text-2xl"
             aria-label="hoiast's Github page"
           >
             <div
@@ -48,17 +49,17 @@ const lgColorString = computed(() => {
             ></div
           ></a>
         </div>
-      </div>
-      <div class="mb-2 flex items-center">
-        <div
-          class="i-carbon-logo-linkedin"
-          :style="`background-image: ${lgColorString}`"
-        ></div>
-        <div class="flex items-center space-x-2 ml-4">
-          <p class="text-2xl sm:text-3xl">LinkedIn</p>
+        <div class="mb-2 flex justify-between">
+          <div class="flex items-center">
+            <div
+              class="i-carbon-logo-linkedin"
+              :style="`background-image: ${lgColorString}`"
+            ></div>
+            <p class="ml-4 text-2xl sm:text-3xl">LinkedIn</p>
+          </div>
           <a
             href="https://www.linkedin.com/in/murilohoias/"
-            class="px-1 rounded-lg cursor-pointer text-white"
+            class="px-1 rounded-lg cursor-pointer text-2xl"
             aria-label="LinkedIn user page"
           >
             <div
@@ -67,17 +68,17 @@ const lgColorString = computed(() => {
             ></div
           ></a>
         </div>
-      </div>
-      <div class="mb-2 flex items-center">
-        <div
-          class="academicons-lattes"
-          :style="`background-image: ${lgColorString}`"
-        ></div>
-        <div class="flex items-center space-x-2 ml-4">
-          <p class="text-2xl sm:text-3xl">Lattes</p>
+        <div class="mb-2 flex justify-between">
+          <div class="flex items-center">
+            <div
+              class="academicons-lattes"
+              :style="`background-image: ${lgColorString}`"
+            ></div>
+            <p class="ml-4 text-2xl sm:text-3xl">Lattes</p>
+          </div>
           <a
             href="http://lattes.cnpq.br/4928822491567061"
-            class="px-1 rounded-lg cursor-pointer text-white"
+            class="px-1 rounded-lg cursor-pointer text-2xl"
             aria-label="Lattes curriculum page"
           >
             <div

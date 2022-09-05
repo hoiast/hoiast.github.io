@@ -31,7 +31,7 @@ const lgColorString = computed(() => {
                     class="text-lg text-[#FC0D46]"
                     aria-label="LUCA organization website"
                   >
-                    <div class="mb-2 flex items-center">
+                    <div class="mb-2 flex items-center text-2xl">
                       <div
                         class="i-carbon-launch"
                         :style="`background-image: ${lgColorString}`"
@@ -65,7 +65,7 @@ const lgColorString = computed(() => {
                     class="text-lg text-[#FC0D46]"
                     aria-label="Theory Group page at https://www.ill.eu/"
                   >
-                    <div class="mb-2 flex items-center">
+                    <div class="mb-2 flex items-center text-2xl">
                       <div
                         class="i-carbon-launch"
                         :style="`background-image: ${lgColorString}`"
@@ -111,7 +111,7 @@ const lgColorString = computed(() => {
                   aria-label="Scientific journal link for the article entitled: Effects of lipid composition on membrane distribution and
                 permeability of natural quinones"
                 >
-                  <div class="mb-2 flex items-center">
+                  <div class="mb-2 flex items-center text-2xl">
                     <div
                       class="i-carbon-book"
                       :style="`background-image: ${lgColorString}`"
@@ -139,7 +139,7 @@ const lgColorString = computed(() => {
                   class="text-lg"
                   aria-label="Scientific journal link for the article entitled: Modeling the Hydrolysis of Iron-Sulfur Clusters"
                 >
-                  <div class="mb-2 flex items-center">
+                  <div class="mb-2 flex items-center text-2xl">
                     <div
                       class="i-carbon-book"
                       :style="`background-image: ${lgColorString}`"
@@ -166,7 +166,7 @@ const lgColorString = computed(() => {
                   aria-label="Scientific journal link for the article entitled: Balanced internal hydration discriminates substrate binding to
                 respiratory complex I"
                 >
-                  <div class="mb-2 flex items-center">
+                  <div class="mb-2 flex items-center text-2xl">
                     <div
                       class="i-carbon-book"
                       :style="`background-image: ${lgColorString}`"

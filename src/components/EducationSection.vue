@@ -34,7 +34,7 @@ const lgColorString = computed(() => {
                   class="text-lg"
                   aria-label="My phD thesis available at www.teses.usp.br"
                 >
-                  <div class="mb-2 flex items-center">
+                  <div class="mb-2 flex items-center text-2xl">
                     <div
                       class="i-carbon-book"
                       :style="`background-image: ${lgColorString}`"

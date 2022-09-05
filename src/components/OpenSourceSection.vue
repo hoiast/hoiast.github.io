@@ -22,7 +22,7 @@ const lgColorString = computed(() => {
             class="text-lg text-[#FC0D46]"
             aria-label="ExoSim online demo on GitHub Pages"
           >
-            <div class="mb-2 flex items-center">
+            <div class="mb-2 flex items-center text-2xl">
               <div
                 class="i-carbon-launch"
                 :style="`background-image: ${lgColorString}`"
@@ -34,7 +34,7 @@ const lgColorString = computed(() => {
             class="text-lg text-[#FC0D46]"
             aria-label="GitHub repository page for ExoSim"
           >
-            <div class="mb-2 flex items-center">
+            <div class="mb-2 flex items-center text-2xl">
               <div
                 class="i-carbon-logo-github"
                 :style="`background-image: ${lgColorString}`"
@@ -56,7 +56,7 @@ const lgColorString = computed(() => {
             class="text-lg text-[#FC0D46]"
             aria-label="GitHub repository page for marvelmind.js"
           >
-            <div class="mb-2 flex items-center">
+            <div class="mb-2 flex items-center text-2xl">
               <div
                 class="i-carbon-logo-github"
                 :style="`background-image: ${lgColorString}`"
@@ -78,7 +78,7 @@ const lgColorString = computed(() => {
             class="text-lg text-[#FC0D46]"
             aria-label="pDynamo library website"
           >
-            <div class="mb-2 flex items-center">
+            <div class="mb-2 flex items-center text-2xl">
               <div
                 class="i-carbon-launch"
                 :style="`background-image: ${lgColorString}`"
