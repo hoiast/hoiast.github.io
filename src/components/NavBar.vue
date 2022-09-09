@@ -24,11 +24,8 @@ watch(puzzleStore, () => {
   <nav class="h-[10vh] fixed w-full max-w-3xl p-4 bg-base transition-base z-10">
     <div class="flex justify-between text-4xl color-base">
       <div class="i-carbon-help cursor-pointer" @click="bounce" />
-      <div
-        class="flex cursor-pointer"
-        @click="toggleLock"
-        v-if="enableAutomaticUnlock"
-      >
+      <div class="flex cursor-pointer" @click="toggleLock">
+        <!-- v-if="enableAutomaticUnlock" -->
         <div :class="'i-carbon-reset-alt'" />
       </div>
       <DarkSwitch />
