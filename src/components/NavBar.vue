@@ -26,7 +26,11 @@ watch(puzzleStore, () => {
       <div class="i-carbon-help cursor-pointer" @click="bounce" />
       <div class="flex cursor-pointer" @click="toggleLock">
         <!-- v-if="enableAutomaticUnlock" -->
-        <div :class="'i-carbon-reset-alt'" />
+        <div
+          :class="
+            puzzleStore.isUnlocked ? 'i-carbon-unlocked' : 'i-carbon-locked'
+          "
+        />
       </div>
       <DarkSwitch />
     </div>
