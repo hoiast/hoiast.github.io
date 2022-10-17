@@ -15,8 +15,9 @@ changeDarkClassToRoot(dark.value);
 // Watch for changes in the user's preferred color scheme.
 watch(dark, changeDarkClassToRoot);
 
-const toggleDark = () => {
+const toggleDark = (event: MouseEvent) => {
   dark.value = !dark.value;
+  return event;
 };
 </script>
 <template>

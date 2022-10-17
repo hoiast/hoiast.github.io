@@ -42,12 +42,13 @@ const emit = defineEmits<{
   (e: "update:rotationalState", value: number): void;
 }>();
 
-const rotate = () => {
+const rotate = (event: MouseEvent) => {
   if (!props.isClickDisabled) {
     unlimitedRotationalState.value += 2;
     rotationalState.value = unlimitedRotationalState.value % 8;
     emit("update:rotationalState", rotationalState.value);
   }
+  return event;
 };
 
 // . props-dependent CSS instructions

@@ -7,11 +7,13 @@ import DarkSwitch from "@/components/DarkSwitch.vue";
 
 const puzzleStore = usePuzzleStore();
 const eventStore = useEventStore();
-const bounce = () => {
+const bounce = (event: MouseEvent) => {
   eventStore.emit("highlightInteractiveElement");
+  return event;
 };
-const toggleLock = () => {
+const toggleLock = (event: MouseEvent) => {
   eventStore.emit("toggleLock");
+  return event;
 };
 const enableAutomaticUnlock = useStorage("enableAutomaticUnlock", false);
 watch(puzzleStore, () => {
