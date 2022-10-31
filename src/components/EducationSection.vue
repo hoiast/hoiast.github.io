@@ -22,7 +22,7 @@ const lgColorString = computed(() => {
             Education
           </GradientText>
           <div class="flex flex-col space-y-2">
-            <div>
+            <div class="mb-2">
               <p class="text-2xl">
                 PhD Computational Biochemistry and Biophysics
               </p>
@@ -34,7 +34,7 @@ const lgColorString = computed(() => {
                   class="text-lg"
                   aria-label="My phD thesis available at www.teses.usp.br"
                 >
-                  <div class="mb-2 flex items-center text-2xl">
+                  <div class="flex items-center text-2xl">
                     <div
                       class="i-carbon-book"
                       :style="`background-image: ${lgColorString}`"
@@ -42,6 +42,9 @@ const lgColorString = computed(() => {
                   </div>
                 </a>
               </div>
+              <GradientText class="text-lg" :colorPattern="colorPattern">
+                2021 CAPES Thesis Award - Honorable Mention
+              </GradientText>
             </div>
             <div>
               <p class="text-2xl">Bachelor of Science Degree in Chemistry</p>

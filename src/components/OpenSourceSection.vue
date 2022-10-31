@@ -69,6 +69,33 @@ const lgColorString = computed(() => {
           client side applications.
         </p>
       </div>
+      <div>
+        <div class="flex items-center space-x-4">
+          <p class="text-2xl">AluraDownloader</p>
+          <a
+            href="https://github.com/hoiast/AluraDownloader"
+            class="text-lg text-[#FC0D46]"
+            aria-label="GitHub repository page for AluraDownloader"
+          >
+            <div class="mb-2 flex items-center text-2xl">
+              <div
+                class="i-carbon-logo-github"
+                :style="`background-image: ${lgColorString}`"
+              ></div>
+            </div>
+          </a>
+        </div>
+        <p>
+          A PHP library for downloading your favorite video lessons from
+          <a
+            href="https://www.alura.com.br/"
+            class="px-1 rounded-lg cursor-pointer text-white"
+            :style="`background-image: ${lgColorString}`"
+            aria-label="pDynamo library website"
+            >Alura</a
+          >.
+        </p>
+      </div>
 
       <div>
         <div class="flex items-center space-x-4">
