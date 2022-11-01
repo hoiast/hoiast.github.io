@@ -3,7 +3,7 @@ import { watch } from "vue";
 import { useEventStore } from "@/stores/event";
 import { usePuzzleStore } from "@/stores/puzzle";
 import { useStorage } from "@/composables/useStorage";
-import DarkSwitch from "@/components/DarkSwitch.vue";
+import DarkSwitch from "@/components/NavBar/partials/DarkSwitch.vue";
 
 const puzzleStore = usePuzzleStore();
 const eventStore = useEventStore();

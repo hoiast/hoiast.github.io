@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import SectionTitle from "@/components/SectionTitle.vue";
-import GradientBorder from "./GradientBorder.vue";
+import SectionTitle from "@/components/partials/SectionTitle.vue";
+import GradientBorder from "@/components/partials/GradientBorder.vue";
 
 const colorPattern = ["#65B947", "#27548E"];
 </script>

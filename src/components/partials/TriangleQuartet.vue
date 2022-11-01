@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import SingleTriangle from "@/components/SingleTriangle.vue";
+import SingleTriangle from "@/components/partials/SingleTriangle.vue";
 import { ref, watch, computed } from "vue";
 
 const props = defineProps({
@@ -11,7 +11,6 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
-
   isClickDisabled: {
     type: Boolean,
     default: false,

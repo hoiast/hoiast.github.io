@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import TriangleQuartet from "@/components/TriangleQuartet.vue";
 import { reactive, ref, onMounted } from "vue";
 import { useStorage } from "@/composables/useStorage";
 import { useEventStore } from "@/stores/event";
 import { usePuzzleStore } from "@/stores/puzzle";
-import SingleTriangle from "./SingleTriangle.vue";
-import GradientText from "./GradientText.vue";
+import TriangleQuartet from "@/components/partials/TriangleQuartet.vue";
+import SingleTriangle from "@/components/partials/SingleTriangle.vue";
+import GradientText from "@/components/partials/GradientText.vue";
 
 const puzzleStore = usePuzzleStore();
 const toggleLock = () => {

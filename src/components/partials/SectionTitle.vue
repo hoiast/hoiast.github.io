@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from "vue";
-import TriangleQuartet from "@/components/TriangleQuartet.vue";
+import TriangleQuartet from "@/components/partials/TriangleQuartet.vue";
 const props = defineProps({
   title: {
     type: String,
