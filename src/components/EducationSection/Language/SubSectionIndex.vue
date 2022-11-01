@@ -10,7 +10,7 @@ defineProps({
 
 <template>
   <div>
-    <SubSectionTitle :colorPattern="colorPattern" title="Open Source" />
+    <SubSectionTitle :colorPattern="colorPattern" title="Languages" />
     <p>Portuguese and English</p>
   </div>
 </template>
