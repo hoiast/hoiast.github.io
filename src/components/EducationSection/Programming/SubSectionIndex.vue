@@ -37,5 +37,8 @@ defineProps({
     <GradientBulletEntry :colorPattern="colorPattern"
       >Jira and Trello</GradientBulletEntry
     >
+    <GradientBulletEntry :colorPattern="colorPattern"
+      >Docker</GradientBulletEntry
+    >
   </div>
 </template>

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import GradientBulletEntry from "@/components/partials/GradientBulletEntry.vue";
 import SubSectionTitle from "@/components/partials/SubSectionTitle.vue";
 defineProps({
   colorPattern: {
@@ -11,6 +12,11 @@ defineProps({
 <template>
   <div>
     <SubSectionTitle :colorPattern="colorPattern" title="Languages" />
-    <p>Portuguese and English</p>
+    <GradientBulletEntry :colorPattern="colorPattern"
+      >Portuguese</GradientBulletEntry
+    >
+    <GradientBulletEntry :colorPattern="colorPattern"
+      >English</GradientBulletEntry
+    >
   </div>
 </template>
