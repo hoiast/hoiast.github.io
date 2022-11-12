@@ -61,7 +61,6 @@ onMounted(() => {
 });
 
 const rotationalStates = ref([0, 0, 0, 0]);
-// const verifyTargets = (rotationalStates: number[]) => {
 const verifyTargets = () => {
   targets.forEach((target) => {
     if (
