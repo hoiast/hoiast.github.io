@@ -20,16 +20,16 @@ eventStore.on("setScroll", (value) => {
 </script>
 
 <template>
-  <main class="bg-base text-base transition-base">
-    <div class="max-w-[48rem] h-screen mx-auto">
-      <div class="h-[10vh]">
-        <NavBar />
-      </div>
-      <div
-        class="h-[90vh] scrollbar scrollbar-w-8px scrollbar-track-color-[#1f2937] scrollbar-thumb-color-[#4b5563] scrollbar-gutter-stable"
-        :class="{ 'overflow-hidden': !isScrollEnabled }"
-        ref="viewFooterRef"
-      >
+  <main class="bg-base text-base transition-base h-screen">
+    <div class="max-w-[48rem] mx-auto">
+      <NavBar />
+    </div>
+    <div
+      class="top-[10vh] h-[90vh] w-full scrollbar scrollbar-w-8px scrollbar-track-color-[#1f2937] scrollbar-thumb-color-[#4b5563] scrollbar-gutter-stable"
+      :class="{ 'overflow-hidden': !isScrollEnabled }"
+      ref="viewFooterRef"
+    >
+      <div class="max-w-[48rem] mx-auto">
         <RouterView />
         <Footer />
       </div>

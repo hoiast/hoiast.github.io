@@ -23,8 +23,10 @@ watch(puzzleStore, () => {
 });
 </script>
 <template>
-  <nav class="h-[10vh] relative w-full p-4 bg-base transition-base">
-    <div class="flex justify-between text-4xl color-base">
+  <nav
+    class="h-[10vh] fixed w-full p-4 bg-base transition-base z-10 max-w-[48rem]"
+  >
+    <div class="flex justify-between items-center text-4xl color-base h-full">
       <div class="i-carbon-help cursor-pointer" @click="bounce" />
       <div class="flex cursor-pointer" @click="toggleLock">
         <!-- v-if="enableAutomaticUnlock" -->
