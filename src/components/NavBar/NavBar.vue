@@ -23,7 +23,7 @@ watch(puzzleStore, () => {
 });
 </script>
 <template>
-  <nav class="h-[10vh] fixed w-full max-w-3xl p-4 bg-base transition-base z-10">
+  <nav class="h-[10vh] relative w-full p-4 bg-base transition-base">
     <div class="flex justify-between text-4xl color-base">
       <div class="i-carbon-help cursor-pointer" @click="bounce" />
       <div class="flex cursor-pointer" @click="toggleLock">

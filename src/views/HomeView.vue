@@ -9,7 +9,7 @@ import ContactSection from "@/components/ContactSection/SectionIndex.vue";
 
 <template>
   <main>
-    <div class="relative top-[10vh] w-full">
+    <div class="relative w-full">
       <InteractiveHome></InteractiveHome>
       <div class="flex flex-col space-y-8">
         <AboutMeSection />

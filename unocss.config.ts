@@ -28,6 +28,14 @@ export default {
     "duration-500",
     "duration-3000",
   ],
+  rules: [
+    [
+      "scrollbar-gutter-stable",
+      {
+        "scrollbar-gutter": "stable",
+      },
+    ],
+  ],
   theme: {
     animation: {
       keyframes: {},

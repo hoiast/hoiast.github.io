@@ -7,20 +7,20 @@ import TriangleQuartet from "@/components/partials/TriangleQuartet.vue";
 import SingleTriangle from "@/components/partials/SingleTriangle.vue";
 import GradientText from "@/components/partials/GradientText.vue";
 
+const eventStore = useEventStore();
 const puzzleStore = usePuzzleStore();
 const toggleLock = () => {
   if (puzzleStore.isUnlocked) {
     puzzleStore.isUnlocked = false;
     rotationalStates.value = [0, 0, 0, 0];
     arePuzzlesDisabled.value.fill(true);
-    window.scrollTo({ top: 0, behavior: "smooth" });
-    verifyGoal();
   } else {
     puzzleStore.isUnlocked = true;
     arePuzzlesDisabled.value.fill(false);
-    verifyGoal();
   }
+  verifyGoal();
 };
+
 const targets = reactive([
   {
     key: 1,
@@ -77,10 +77,10 @@ const verifyGoal = () => {
   if (arePuzzlesDisabled.value.every((element: boolean) => element === false)) {
     puzzleStore.isUnlocked = true;
     rotationalStates.value = [7, 1, 5, 3];
-    document.body.style.overflow = "auto";
+    eventStore.emit("setScroll", true);
   } else {
     puzzleStore.isUnlocked = false;
-    document.body.style.overflow = "hidden";
+    eventStore.emit("setScroll", false);
   }
 };
 const isAnimatingHighlight = ref(false);
@@ -92,7 +92,6 @@ const highlightInteractiveElement = () => {
   }, 1500);
 };
 
-const eventStore = useEventStore();
 eventStore.on("highlightInteractiveElement", highlightInteractiveElement);
 eventStore.on("toggleLock", toggleLock);
 </script>
