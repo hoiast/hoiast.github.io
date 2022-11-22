@@ -35,6 +35,12 @@ export default {
         "scrollbar-gutter": "stable",
       },
     ],
+    [
+      "tap-highlight-none",
+      {
+        "-webkit-tap-highlight-color": "rgba(0,0,0,0)",
+      },
+    ],
   ],
   theme: {
     animation: {

@@ -79,7 +79,7 @@ const paddingToAdjustRotationCenter = computed(() => {
   <div
     @click="rotate"
     :class="[
-      `transform triangle relative rotate .transition-transform duration-${transformDuration} ease-in-out`,
+      `transform triangle relative rotate transition-transform duration-${transformDuration} ease-in-out tap-highlight-none`,
       { paddingToAdjustRotationCenter: rotationalState % 2 === 0 },
       { 'cursor-pointer': !isClickDisabled },
     ]"
