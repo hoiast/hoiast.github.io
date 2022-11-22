@@ -38,14 +38,14 @@ const targets = reactive([
   },
   {
     key: 3,
-    position: "bottom-10 left-0",
+    position: "bottom-0 left-0",
     rotationalStates: [6, 2, 2, 0],
     isDisabled: true,
     colorPattern: ["#443DAA", "#973894"],
   },
   {
     key: 4,
-    position: "bottom-10 right-0",
+    position: "bottom-0 right-0",
     rotationalStates: [4, 0, 0, 4],
     isDisabled: true,
     colorPattern: ["#973894", "#FC0D46"],
@@ -97,7 +97,7 @@ eventStore.on("toggleLock", toggleLock);
 </script>
 <template>
   <div class="flex items-center justify-center p-4">
-    <div class="flex items-center justify-center min-h-[85vh] w-full mb-[5vh]">
+    <div class="flex items-center justify-center min-h-[80vh] w-full mb-[5vh]">
       <TriangleQuartet
         v-for="target in targets"
         :key="target.key"

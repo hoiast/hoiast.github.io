@@ -5,7 +5,7 @@ const lgColorString = `linear-gradient(${colorPattern.join(",")})`;
 </script>
 <template>
   <footer
-    class="relative py-6 bg-base transition-base color-base flex flex-col items-center"
+    class="relative py-6 bg-base transition-base color-base flex flex-col items-center text-center gap-y-2"
   >
     <p>Murilo Hoias Teixeira - {{ year }}</p>
     <p>

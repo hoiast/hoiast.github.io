@@ -29,7 +29,7 @@ eventStore.on("setScroll", (value) => {
       :class="{ 'overflow-hidden': !isScrollEnabled }"
       ref="viewFooterRef"
     >
-      <div class="max-w-[48rem] mx-auto">
+      <div class="max-w-[48rem] mx-auto mb-[5vh]">
         <RouterView />
         <Footer />
       </div>
