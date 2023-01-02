@@ -56,6 +56,8 @@ const lgColorString = computed(() => {
         title="pDynamo"
         linkURL="https://www.pdynamo.org/"
         linkLabel="pDynamo library website"
+        gitHubURL="https://github.com/pdynamo/pDynamo3"
+        gitHubLabel="GitHub repository page for pDynamo"
       >
         An open source program library that has been designed for the simulation
         of molecular systems using quantum chemical (QC), molecular mechanical
