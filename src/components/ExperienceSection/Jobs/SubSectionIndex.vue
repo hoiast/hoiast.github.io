@@ -19,6 +19,18 @@ const lgColorString = computed(() => {
     <div class="flex flex-col space-y-8">
       <JobEntry
         :colorPattern="colorPattern"
+        role="BackEnd Developer"
+        companyName="Gabriel Tecnologia"
+        institutionalURL="https://www.gabriel.com.br/"
+        institutionalURLLabel="Gabriel's organization website"
+        location="São Paulo - Brazil"
+        period="Jan. 2023 - Present"
+      >
+        I am responsible for automation of internal processes and integration
+        between Low and No Code platforms with backend microservices.
+      </JobEntry>
+      <JobEntry
+        :colorPattern="colorPattern"
         role="Full Stack Developer"
         companyName="LUCA - Ciência para Educar"
         institutionalURL="https://lucaeducar.com.br/"

@@ -13,11 +13,10 @@ defineProps({
   <div>
     <SubSectionTitle :colorPattern="colorPattern" title="Programming" />
     <GradientBulletEntry :colorPattern="colorPattern"
-      >Javascript, Typescript, Python and PHP</GradientBulletEntry
+      >Javascript, Typescript, C#, PHP and Python</GradientBulletEntry
     >
-
     <GradientBulletEntry :colorPattern="colorPattern"
-      >Node.js Express and Laravel</GradientBulletEntry
+      >Express, ASP.NET and Laravel</GradientBulletEntry
     >
     <GradientBulletEntry :colorPattern="colorPattern"
       >MySQL and MongoDB</GradientBulletEntry
@@ -32,10 +31,10 @@ defineProps({
       >WebRTC, WebUSB, Websockets and MQTT</GradientBulletEntry
     >
     <GradientBulletEntry :colorPattern="colorPattern"
-      >Git with Github and Bitbucket</GradientBulletEntry
+      >Git with Github, GitLab and Bitbucket</GradientBulletEntry
     >
     <GradientBulletEntry :colorPattern="colorPattern"
-      >Jira and Trello</GradientBulletEntry
+      >Jira, Trello and Notion</GradientBulletEntry
     >
     <GradientBulletEntry :colorPattern="colorPattern"
       >Docker</GradientBulletEntry
