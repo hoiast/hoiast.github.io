@@ -31,7 +31,7 @@ const lgColorString = computed(() => {
       </JobEntry>
       <JobEntry
         :colorPattern="colorPattern"
-        role="Full Stack Developer"
+        role="FullStack Developer"
         companyName="LUCA - Ciência para Educar"
         institutionalURL="https://lucaeducar.com.br/"
         institutionalURLLabel="LUCA organization website"
