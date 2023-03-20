@@ -29,8 +29,8 @@ watch(puzzleStore, () => {
     <div class="flex justify-between items-center text-4xl color-base h-full">
       <div class="i-carbon-help cursor-pointer" @click="bounce" />
       <div class="flex cursor-pointer" @click="toggleLock">
-        <!-- v-if="enableAutomaticUnlock" -->
         <div
+          v-if="enableAutomaticUnlock"
           :class="
             puzzleStore.isUnlocked ? 'i-carbon-unlocked' : 'i-carbon-locked'
           "
