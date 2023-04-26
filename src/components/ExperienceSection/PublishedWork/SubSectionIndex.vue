@@ -15,6 +15,14 @@ defineProps({
     <div class="flex flex-col space-y-6">
       <PublicationEntry
         :colorPattern="colorPattern"
+        title="Mechanism of rotenone binding to respiratory complex I depends on ligand flexibility"
+        authors="Pereira, C. S., Teixeira, M. H., Russell, D. A., Hirst, J. and Arantes, G. M."
+        details="Sci Rep 13, 6738, 2023"
+        documentURL="https://doi.org/10.1038/s41598-023-33333-6"
+        documentLabel="Scientific journal link for the article entitled: Mechanism of rotenone binding to respiratory complex I depends on ligand flexibility"
+      />
+      <PublicationEntry
+        :colorPattern="colorPattern"
         title="Effects of lipid composition on membrane distribution and permeability of natural quinones"
         authors="Teixeira, M. H. and Arantes, G. M."
         details="RSC Advances, v. 9, p. 16892-16899, 2019"
@@ -24,7 +32,7 @@ defineProps({
       <PublicationEntry
         :colorPattern="colorPattern"
         title="Modeling the Hydrolysis of Iron-Sulfur Clusters"
-        authors="Teixeira, M. H. , Curtolo, F., Camilo, S. R. G. , Field, M. J., Zheng, P., Li, H. and Arantes, G. M."
+        authors="Teixeira, M. H., Curtolo, F., Camilo, S. R. G., Field, M. J., Zheng, P., Li, H. and Arantes, G. M."
         details="Journal of Chemical Information and Modeling, v. 60, p.653-660, 2019"
         documentURL="https://dx.doi.org/10.1021/acs.jcim.9b00881"
         documentLabel="Scientific journal link for the article entitled: Modeling the Hydrolysis of Iron-Sulfur Clusters"

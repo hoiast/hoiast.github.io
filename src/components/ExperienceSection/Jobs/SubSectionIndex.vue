@@ -19,19 +19,21 @@ const lgColorString = computed(() => {
     <div class="flex flex-col space-y-8">
       <JobEntry
         :colorPattern="colorPattern"
-        role="BackEnd Developer"
+        role="BackEnd Engineer"
         companyName="Gabriel Tecnologia"
         institutionalURL="https://www.gabriel.com.br/"
         institutionalURLLabel="Gabriel's organization website"
         location="São Paulo - Brazil"
         period="Jan. 2023 - Present"
       >
-        I am responsible for automation of internal processes and integration
-        between Low and No Code platforms with backend microservices.
+        I am responsible for architecture, modelling and implementation of
+        microservices. I also improve automation of internal processes by
+        securely integrating Low and No Code platforms with a microservices
+        system.
       </JobEntry>
       <JobEntry
         :colorPattern="colorPattern"
-        role="FullStack Developer"
+        role="FullStack Engineer"
         companyName="LUCA - Ciência para Educar"
         institutionalURL="https://lucaeducar.com.br/"
         institutionalURLLabel="LUCA organization website"

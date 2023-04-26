@@ -19,11 +19,14 @@ defineProps({
       >Express, ASP.NET and Laravel</GradientBulletEntry
     >
     <GradientBulletEntry :colorPattern="colorPattern"
-      >MySQL and MongoDB</GradientBulletEntry
+      >MySQL, PostgreSQL and MongoDB</GradientBulletEntry
     >
     <GradientBulletEntry :colorPattern="colorPattern"
       >Vue 3</GradientBulletEntry
     >
+    <GradientBulletEntry :colorPattern="colorPattern"
+      >Jester, XUnit, PHPUnit and Pytest
+    </GradientBulletEntry>
     <GradientBulletEntry :colorPattern="colorPattern"
       >SCSS and CSS3 with Bootstrap, TailwindCSS and UnoCSS</GradientBulletEntry
     >
@@ -34,10 +37,19 @@ defineProps({
       >Git with Github, GitLab and Bitbucket</GradientBulletEntry
     >
     <GradientBulletEntry :colorPattern="colorPattern"
+      >Docker, Docker Composer and Portainer</GradientBulletEntry
+    >
+    <GradientBulletEntry :colorPattern="colorPattern"
+      >AirBite, Airflow and DBT</GradientBulletEntry
+    >
+    <GradientBulletEntry :colorPattern="colorPattern"
+      >AWS and GCP</GradientBulletEntry
+    >
+    <GradientBulletEntry :colorPattern="colorPattern"
       >Jira, Trello and Notion</GradientBulletEntry
     >
     <GradientBulletEntry :colorPattern="colorPattern"
-      >Docker</GradientBulletEntry
+      >Retool, Appsmith and Jestor</GradientBulletEntry
     >
   </div>
 </template>
