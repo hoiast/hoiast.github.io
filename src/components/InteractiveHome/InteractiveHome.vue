@@ -130,7 +130,7 @@ eventStore.on("toggleLock", toggleLock);
         v-if="puzzleStore.isUnlocked"
       >
         <GradientText
-          class="text-4xl text-center"
+          class="text-4xl text-center select-none"
           :colorPattern="['#65B947', '#443DAA', '#FC0D46']"
         >
           WELCOME
