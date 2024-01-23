@@ -9,10 +9,19 @@ const isScrollEnabled = ref(false);
 const viewFooterRef = ref();
 const eventStore = useEventStore();
 const setScroll = (value: boolean) => {
-  isScrollEnabled.value = value;
   if (!value) {
     viewFooterRef.value.scrollTo({ top: 0, behavior: "smooth" });
   }
+  /*
+  Note: setTimeout is being used to prevent a bug that is not fully diagnosed yet. 
+  When isScrollEnabled is changed together with scrollTo, mobile devices ignore 
+  the scrolling command. It seems that rebuilding the DOM prevents scrolling. The 
+  1000 ms timeout is used as a safe value to ensure that the DOM is rebuilt only 
+  after scrolling.
+  */
+  setTimeout(() => {
+    isScrollEnabled.value = value;
+  }, 1000);
 };
 eventStore.on("setScroll", (value) => {
   value ? setScroll(true) : setScroll(false);
