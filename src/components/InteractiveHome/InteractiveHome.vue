@@ -54,7 +54,7 @@ const targets = reactive([
 
 const arePuzzlesDisabled = useStorage(
   "arePuzzlesDisabled",
-  Array(4).fill(true)
+  Array(4).fill(true),
 );
 onMounted(() => {
   verifyGoal();
