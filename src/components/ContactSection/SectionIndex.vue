@@ -34,7 +34,7 @@ const colorPattern = ["#65B947", "#27548E"];
           :colorPattern="colorPattern"
           title="LinkedIn"
           iconClass="i-carbon-logo-linkedin"
-          linkURL="https://www.linkedin.com/in/murilohoias/"
+          linkURL="https://www.linkedin.com/in/murilohoias"
           linkLabel="LinkedIn user page"
         />
         <ContactEntry

@@ -20,7 +20,7 @@ const lgColorString = computed(() => {
         title="ExoSim"
         gitHubURL="https://github.com/hoiast/ExoSim"
         gitHubLabel="GitHub repository page for ExoSim"
-        linkURL="https://hoiast.github.io/ExoSim/"
+        linkURL="https://hoiast.github.io/ExoSim"
         linkLabel="ExoSim online demo"
       >
         An educational web application for exploring an exoplanet detection
@@ -44,7 +44,7 @@ const lgColorString = computed(() => {
       >
         A PHP library for downloading your favorite video lessons from
         <a
-          href="https://www.alura.com.br/"
+          href="https://www.alura.com.br"
           class="px-1 rounded-lg cursor-pointer text-white"
           :style="`background-image: ${lgColorString}`"
           aria-label="pDynamo library website"
@@ -54,7 +54,7 @@ const lgColorString = computed(() => {
       <OpenSourceEntry
         :colorPattern="colorPattern"
         title="pDynamo"
-        linkURL="https://www.pdynamo.org/"
+        linkURL="https://www.pdynamo.org"
         linkLabel="pDynamo library website"
         gitHubURL="https://github.com/pdynamo/pDynamo3"
         gitHubLabel="GitHub repository page for pDynamo"

@@ -15,13 +15,13 @@ const lgColorString = computed(() => {
 
 <template>
   <div>
-    <SubSectionTitle :colorPattern="colorPattern" title="Jobs" />
+    <SubSectionTitle :colorPattern="colorPattern" title="Jobs"/>
     <div class="flex flex-col space-y-8">
       <JobEntry
         :colorPattern="colorPattern"
         role="BackEnd Engineer"
         companyName="Gabriel Tecnologia"
-        institutionalURL="https://www.gabriel.com.br/"
+        institutionalURL="https://www.gabriel.com.br"
         institutionalURLLabel="Gabriel's organization website"
         location="São Paulo - Brazil"
         period="Jan. 2023 - Present"
@@ -42,7 +42,7 @@ const lgColorString = computed(() => {
       >
         At LUCA, I worked as the main developer of
         <a
-          href="https://roversandbeyond.com.br/"
+          href="https://roversandbeyond.com.br"
           class="px-1 rounded-lg cursor-pointer text-white"
           :style="`background-image: ${lgColorString}`"
           aria-label="Rovers&Beyond product website"
@@ -56,13 +56,13 @@ const lgColorString = computed(() => {
         role="Visiting Researcher"
         companyName="Institut Laue-Langevin - Theory Group"
         institutionalURL="https://www.ill.eu/users/scientific-groups/theory"
-        institutionalURLLabel="Theory Group page at https://www.ill.eu/"
+        institutionalURLLabel="Theory Group page at https://www.ill.eu"
         location="Grenoble - France"
         period="Oct. 2018 - Sept. 2019"
       >
         I worked on the
         <a
-          href="https://www.pdynamo.org/"
+          href="https://www.pdynamo.org"
           class="px-1 rounded-lg cursor-pointer text-white"
           :style="`background-image: ${lgColorString}`"
           aria-label="pDynamo library website"
