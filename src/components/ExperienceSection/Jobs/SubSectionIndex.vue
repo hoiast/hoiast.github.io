@@ -35,14 +35,14 @@ const lgColorString = computed(() => {
         :colorPattern="colorPattern"
         role="FullStack Engineer"
         companyName="LUCA - Ciência para Educar"
-        institutionalURL="https://lucaeducar.com.br/"
+        institutionalURL="https://www.linkedin.com/company/luca-ci%C3%AAnciaparaeducar"
         institutionalURLLabel="LUCA organization website"
         location="São Paulo - Brazil"
         period="Oct. 2020 - Jul. 2022"
       >
         At LUCA, I worked as the main developer of
         <a
-          href="https://roversandbeyond.com.br"
+          href="https://agencia.fapesp.br/ferramenta-educacional-permite-controlar-rover-em-cenarios-que-simulam-marte/35205"
           class="px-1 rounded-lg cursor-pointer text-white"
           :style="`background-image: ${lgColorString}`"
           aria-label="Rovers&Beyond product website"
