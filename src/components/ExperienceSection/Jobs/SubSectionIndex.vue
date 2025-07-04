@@ -53,7 +53,7 @@ const lgColorString = computed(() => {
       </JobEntry>
       <JobEntry
         :colorPattern="colorPattern"
-        role="Visiting Researcher"
+        role="Visitor Researcher"
         companyName="Institut Laue-Langevin - Theory Group"
         institutionalURL="https://www.ill.eu/users/scientific-groups/theory"
         institutionalURLLabel="Theory Group page at https://www.ill.eu"
