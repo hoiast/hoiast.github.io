@@ -3,7 +3,6 @@ import SectionTitle from "@/components/partials/SectionTitle.vue";
 import GradientTextLink from "@/components/partials/GradientTextLink.vue";
 import OpenSourceEntry from "@/components/OpenSourceSection/partials/OpenSourceEntry.vue";
 const colorPattern = ["#973894", "#FC0D46"];
-
 </script>
 <template>
   <section>

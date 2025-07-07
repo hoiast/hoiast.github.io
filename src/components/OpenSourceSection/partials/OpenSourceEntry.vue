@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import GradientIconLink from "@/components/partials/GradientIconLink.vue";
-const props = defineProps({
+defineProps({
   colorPattern: {
     type: Array<string>,
     default: ["#65B947", "#1232A5", "#7547AE", "#FC0D46"],

@@ -3,7 +3,7 @@ import SubSectionTitle from "@/components/partials/SubSectionTitle.vue";
 import GradienLink from "@/components/partials/GradientTextLink.vue";
 import CompanyEntry from "./partials/CompanyEntry.vue";
 import JobEntry from "@/components/ExperienceSection/Jobs/partials/JobEntry.vue";
-const props = defineProps({
+defineProps({
   colorPattern: {
     type: Array<string>,
     default: ["#65B947", "#1232A5", "#7547AE", "#FC0D46"],
@@ -13,7 +13,7 @@ const props = defineProps({
 
 <template>
   <div>
-    <SubSectionTitle :colorPattern="colorPattern" title="Jobs"/>
+    <SubSectionTitle :colorPattern="colorPattern" title="Jobs" />
     <div class="flex flex-col space-y-8">
       <CompanyEntry
         :colorPattern="colorPattern"
@@ -22,7 +22,7 @@ const props = defineProps({
         institutionalURLLabel="Gabriel's organization website"
         location="São Paulo - Brazil"
       >
-         <JobEntry role="Head of Engineering" period="Jan. 2024 - Present">
+        <JobEntry role="Head of Engineering" period="Jan. 2024 - Present">
           I build, develop and manage cross field teams on mechanics,
           electronics, embedded software, computer vision, backend, frontend,
           mobile and cloud infrastructure. Our main purpose is to build a
@@ -49,7 +49,7 @@ const props = defineProps({
             :colorPattern="colorPattern"
             href="https://agencia.fapesp.br/ferramenta-educacional-permite-controlar-rover-em-cenarios-que-simulam-marte/35205"
             ariaLabel="Rovers&Beyond product website"
-          >Rovers & Beyond</GradienLink
+            >Rovers & Beyond</GradienLink
           >, a gamified experience for space missions on Mars. It includes ludic
           quizzes, training simulators and remote driving sessions of robotic
           rovers.

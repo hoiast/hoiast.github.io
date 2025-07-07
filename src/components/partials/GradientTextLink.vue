@@ -29,6 +29,6 @@ const lgColorString = computed(() => {
     :class="`${props.class} px-1 rounded-lg cursor-pointer text-white`"
     :style="`background-image: ${lgColorString}`"
     ><slot />
-    </a>
+  </a>
 </template>
 <style></style>
