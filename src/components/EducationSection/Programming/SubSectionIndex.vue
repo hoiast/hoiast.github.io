@@ -16,10 +16,10 @@ defineProps({
       >Javascript, Typescript, C#, PHP and Python</GradientBulletEntry
     >
     <GradientBulletEntry :colorPattern="colorPattern"
-      >Express, ASP.NET and Laravel</GradientBulletEntry
+      >Express, Nest.js, ASP.NET and Laravel</GradientBulletEntry
     >
     <GradientBulletEntry :colorPattern="colorPattern"
-      >MySQL, PostgreSQL and MongoDB</GradientBulletEntry
+      >MySQL, PostgreSQL, Redis and MongoDB</GradientBulletEntry
     >
     <GradientBulletEntry :colorPattern="colorPattern"
       >Vue 3</GradientBulletEntry
@@ -40,16 +40,20 @@ defineProps({
       >Docker, Docker Composer and Portainer</GradientBulletEntry
     >
     <GradientBulletEntry :colorPattern="colorPattern"
-      >AirBite, Airflow and DBT</GradientBulletEntry
+      >AirBite, Airflow, DBT, AWS S3, AWS Glue and AWS
+      RedShift</GradientBulletEntry
     >
     <GradientBulletEntry :colorPattern="colorPattern"
-      >AWS and GCP</GradientBulletEntry
+      >AWS and GCP using Terraform and Atlantis</GradientBulletEntry
+    >
+    <GradientBulletEntry :colorPattern="colorPattern"
+      >Event scheduling with Bull and RabbitMQ</GradientBulletEntry
     >
     <GradientBulletEntry :colorPattern="colorPattern"
       >Jira, Trello and Notion</GradientBulletEntry
     >
     <GradientBulletEntry :colorPattern="colorPattern"
-      >Retool, Appsmith and Jestor</GradientBulletEntry
+      >Retool, Appsmith, AirTable and Jestor</GradientBulletEntry
     >
   </div>
 </template>
