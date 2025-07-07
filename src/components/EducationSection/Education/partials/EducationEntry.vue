@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { computed } from "vue";
 import GradientText from "@/components/partials/GradientText.vue";
+import GradientIconLink from "@/components/partials/GradientIconLink.vue";
 const props = defineProps({
   colorPattern: {
     type: Array<string>,
@@ -31,9 +31,6 @@ const props = defineProps({
     default: "",
   },
 });
-const lgColorString = computed(() => {
-  return `linear-gradient(${props.colorPattern.join(",")})`;
-});
 </script>
 <template>
   <div>
@@ -43,19 +40,13 @@ const lgColorString = computed(() => {
     <p class="text-base">{{ period }}</p>
     <div class="flex space-x-4">
       <p class="text-base">{{ institution }}</p>
-      <a
+      <GradientIconLink
         v-if="documentURL"
-        :href="documentURL"
-        class="text-lg"
-        :aria-label="documentLabel"
-      >
-        <div class="flex items-center text-2xl">
-          <div
-            class="i-carbon-book"
-            :style="`background-image: ${lgColorString}`"
-          ></div>
-        </div>
-      </a>
+        :linkURL="documentURL"
+        :linkLabel="documentLabel"
+        :color-pattern="colorPattern"
+        iconClass="i-carbon-book"
+      ></GradientIconLink>
     </div>
     <GradientText v-if="notes" class="text-lg" :colorPattern="colorPattern">
       {{ notes }}

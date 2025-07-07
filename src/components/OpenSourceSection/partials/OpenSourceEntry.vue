@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from "vue";
+import GradientIconLink from "@/components/partials/GradientIconLink.vue";
 const props = defineProps({
   colorPattern: {
     type: Array<string>,
@@ -26,40 +26,25 @@ const props = defineProps({
     default: "",
   },
 });
-const lgColorString = computed(() => {
-  return `linear-gradient(${props.colorPattern.join(",")})`;
-});
 </script>
 <template>
   <div>
     <div class="flex items-center space-x-4">
       <p class="text-2xl">{{ title }}</p>
-      <a
+      <GradientIconLink
         v-if="linkURL"
-        :href="linkURL"
-        class="text-lg text-[#FC0D46]"
-        :aria-label="linkLabel"
-      >
-        <div class="mb-2 flex items-center text-2xl">
-          <div
-            class="i-carbon-launch"
-            :style="`background-image: ${lgColorString}`"
-          ></div>
-        </div>
-      </a>
-      <a
+        :linkURL="linkURL"
+        :linkLabel="linkLabel"
+        :color-pattern="colorPattern"
+        iconClass="i-carbon-launch"
+      ></GradientIconLink>
+      <GradientIconLink
         v-if="gitHubURL"
-        :href="gitHubURL"
-        class="text-lg text-[#FC0D46]"
-        :aria-label="gitHubLabel"
-      >
-        <div class="mb-2 flex items-center text-2xl">
-          <div
-            class="i-carbon-logo-github"
-            :style="`background-image: ${lgColorString}`"
-          ></div>
-        </div>
-      </a>
+        :linkURL="gitHubURL"
+        :linkLabel="gitHubLabel"
+        :color-pattern="colorPattern"
+        iconClass="i-carbon-logo-github"
+      ></GradientIconLink>
     </div>
     <p>
       <slot />

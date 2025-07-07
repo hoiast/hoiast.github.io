@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import GradientLink from "@/components/partials/GradientLink.vue";
+import GradientTextLink from "@/components/partials/GradientTextLink.vue";
 const year = new Date().getFullYear();
 const colorPattern = ["#65B947", "#27548E"];
 </script>
@@ -9,7 +9,7 @@ const colorPattern = ["#65B947", "#27548E"];
   >
     <p>Murilo Hoias Teixeira - {{ year }}</p>
     <p>
-      <GradientLink
+      <GradientTextLink
         :colorPattern="colorPattern"
         class="flex items-center gap-2"
         href="https://github.com/hoiast/hoiast.github.io"
@@ -17,7 +17,7 @@ const colorPattern = ["#65B947", "#27548E"];
       >
         <div class="i-carbon-logo-github"></div>
         Portfolio Repository
-      </GradientLink>
+      </GradientTextLink>
     </p>
     <p>This portfolio is hosted with GitHub Pages and Actions</p>
   </footer>

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import SubSectionTitle from "@/components/partials/SubSectionTitle.vue";
-import GradienLink from "@/components/partials/GradientLink.vue";
+import GradienLink from "@/components/partials/GradientTextLink.vue";
 import JobEntry from "@/components/ExperienceSection/Jobs/partials/JobEntry.vue";
 const props = defineProps({
   colorPattern: {

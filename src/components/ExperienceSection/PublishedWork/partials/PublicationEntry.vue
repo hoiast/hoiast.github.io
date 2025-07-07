@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from "vue";
+import GradientIconLink from "@/components/partials/GradientIconLink.vue";
 const props = defineProps({
   colorPattern: {
     type: Array<string>,
@@ -26,9 +26,6 @@ const props = defineProps({
     default: "",
   },
 });
-const lgColorString = computed(() => {
-  return `linear-gradient(${props.colorPattern.join(",")})`;
-});
 </script>
 <template>
   <div>
@@ -39,19 +36,13 @@ const lgColorString = computed(() => {
     <p>{{ authors }}</p>
     <div class="flex items-center space-x-4">
       <p>{{ details }}</p>
-      <a
+      <GradientIconLink
         v-if="documentURL"
-        :href="documentURL"
-        class="text-lg"
-        :aria-label="documentLabel"
-      >
-        <div class="mb-2 flex items-center text-2xl">
-          <div
-            class="i-carbon-book"
-            :style="`background-image: ${lgColorString}`"
-          ></div>
-        </div>
-      </a>
+        :linkURL="documentURL"
+        :linkLabel="documentLabel"
+        :color-pattern="colorPattern"
+        iconClass="i-carbon-book"
+      ></GradientIconLink>
     </div>
   </div>
 </template>

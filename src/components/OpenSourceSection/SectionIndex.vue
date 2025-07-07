@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import SectionTitle from "@/components/partials/SectionTitle.vue";
-import GradientLink from "@/components/partials/GradientLink.vue";
+import GradientTextLink from "@/components/partials/GradientTextLink.vue";
 import OpenSourceEntry from "@/components/OpenSourceSection/partials/OpenSourceEntry.vue";
 const colorPattern = ["#973894", "#FC0D46"];
 
@@ -41,11 +41,11 @@ const colorPattern = ["#973894", "#FC0D46"];
         gitHubLabel="GitHub repository page for AluraDownloader"
       >
         A PHP library for downloading your favorite video lessons from
-        <GradientLink
+        <GradientTextLink
           :colorPattern="colorPattern"
           href="https://www.alura.com.br"
           ariaLabel="Alura website"
-          >Alura</GradientLink
+          >Alura</GradientTextLink
         >.
       </OpenSourceEntry>
       <OpenSourceEntry
