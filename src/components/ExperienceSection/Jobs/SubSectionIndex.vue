@@ -61,6 +61,7 @@ const props = defineProps({
         institutionalURL="https://www.ill.eu/users/scientific-groups/theory"
         institutionalURLLabel="Theory Group page at https://www.ill.eu"
         location="Grenoble - France"
+        locationIcon="i-flag:fr-4x3"
       >
         <JobEntry role="Visitor Researcher" period="Oct. 2018 - Sept. 2019">
           I worked on the
@@ -71,7 +72,7 @@ const props = defineProps({
             >pDynamo</GradienLink
           >
           library, migrating its codebase to Python 3 and implementing new
-          features.
+          quantum chemistry calculation methods.
         </JobEntry>
       </CompanyEntry>
     </div>

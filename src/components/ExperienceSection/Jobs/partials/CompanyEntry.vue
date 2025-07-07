@@ -25,6 +25,10 @@ const props = defineProps({
     type: String,
     default: "City - Country",
   },
+  locationIcon: {
+    type: String,
+    default: "i-flag:br-4x3",
+  },
   period: {
     type: String,
     default: "Month Year - Month Year",
@@ -45,7 +49,10 @@ const props = defineProps({
         >
         </GradientIconLink>
       </div>
-      <p>{{ location }}</p>
+      <div class="flex items-center space-x-4">
+        <p>{{ location }}</p>
+        <div :class="locationIcon" />
+      </div>
     </div>
     <slot />
   </div>
