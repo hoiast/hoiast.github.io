@@ -1,15 +1,12 @@
 <script setup lang="ts">
-import { computed } from "vue";
 import SubSectionTitle from "@/components/partials/SubSectionTitle.vue";
+import GradienLink from "@/components/partials/GradientLink.vue";
 import JobEntry from "@/components/ExperienceSection/Jobs/partials/JobEntry.vue";
 const props = defineProps({
   colorPattern: {
     type: Array<string>,
     default: ["#65B947", "#1232A5", "#7547AE", "#FC0D46"],
   },
-});
-const lgColorString = computed(() => {
-  return `linear-gradient(${props.colorPattern.join(",")})`;
 });
 </script>
 
@@ -41,12 +38,11 @@ const lgColorString = computed(() => {
         period="Oct. 2020 - Jul. 2022"
       >
         At LUCA, I worked as the main developer of
-        <a
+        <GradienLink
+          :colorPattern="colorPattern"
           href="https://agencia.fapesp.br/ferramenta-educacional-permite-controlar-rover-em-cenarios-que-simulam-marte/35205"
-          class="px-1 rounded-lg cursor-pointer text-white"
-          :style="`background-image: ${lgColorString}`"
-          aria-label="Rovers&Beyond product website"
-          >Rovers & Beyond</a
+          ariaLabel="Rovers&Beyond product website"
+          >Rovers & Beyond</GradienLink
         >, a gamified experience for space missions on Mars. It includes ludic
         quizzes, training simulators and remote driving sessions of robotic
         rovers.
@@ -61,12 +57,11 @@ const lgColorString = computed(() => {
         period="Oct. 2018 - Sept. 2019"
       >
         I worked on the
-        <a
+        <GradienLink
+          :colorPattern="colorPattern"
           href="https://www.pdynamo.org"
-          class="px-1 rounded-lg cursor-pointer text-white"
-          :style="`background-image: ${lgColorString}`"
-          aria-label="pDynamo library website"
-          >pDynamo</a
+          ariaLabel="pDynamo library website"
+          >pDynamo</GradienLink
         >
         library, migrating its codebase to Python 3 and implementing new
         features.

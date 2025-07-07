@@ -1,11 +1,9 @@
 <script setup lang="ts">
-import { computed } from "vue";
 import SectionTitle from "@/components/partials/SectionTitle.vue";
+import GradientLink from "@/components/partials/GradientLink.vue";
 import OpenSourceEntry from "@/components/OpenSourceSection/partials/OpenSourceEntry.vue";
 const colorPattern = ["#973894", "#FC0D46"];
-const lgColorString = computed(() => {
-  return `linear-gradient(${colorPattern.join(",")})`;
-});
+
 </script>
 <template>
   <section>
@@ -43,12 +41,11 @@ const lgColorString = computed(() => {
         gitHubLabel="GitHub repository page for AluraDownloader"
       >
         A PHP library for downloading your favorite video lessons from
-        <a
+        <GradientLink
+          :colorPattern="colorPattern"
           href="https://www.alura.com.br"
-          class="px-1 rounded-lg cursor-pointer text-white"
-          :style="`background-image: ${lgColorString}`"
-          aria-label="pDynamo library website"
-          >Alura</a
+          ariaLabel="Alura website"
+          >Alura</GradientLink
         >.
       </OpenSourceEntry>
       <OpenSourceEntry
