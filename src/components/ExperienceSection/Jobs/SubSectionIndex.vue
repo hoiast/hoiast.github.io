@@ -22,14 +22,22 @@ defineProps({
         institutionalURLLabel="Gabriel's organization website"
         location="São Paulo - Brazil"
       >
-        <JobEntry role="Head of Engineering" period="Jan. 2024 - Present">
+        <JobEntry
+          :colorPattern="colorPattern"
+          role="Head of Engineering"
+          period="Jan. 2024 - Present"
+        >
           I build, develop and manage cross field teams on mechanics,
           electronics, embedded software, computer vision, backend, frontend,
           mobile and cloud infrastructure. Our main purpose is to build a
           reliable, accessible and smart network of surveillance cameras
           operating in the urban space.
         </JobEntry>
-        <JobEntry role="BackEnd Engineer" period="Jan. 2023 - Dec. 2023">
+        <JobEntry
+          :colorPattern="colorPattern"
+          role="BackEnd Engineer"
+          period="Jan. 2023 - Dec. 2023"
+        >
           I am responsible for architecture, modelling and implementation of
           microservices. I also improve automation of internal processes by
           securely integrating Low and No Code platforms with a microservices
@@ -43,7 +51,11 @@ defineProps({
         institutionalURLLabel="LUCA organization website"
         location="São Paulo - Brazil"
       >
-        <JobEntry role="FullStack Engineer" period="Oct. 2020 - Jul. 2022">
+        <JobEntry
+          :colorPattern="colorPattern"
+          role="FullStack Engineer"
+          period="Oct. 2020 - Jul. 2022"
+        >
           At LUCA, I worked as the main developer of
           <GradienLink
             :colorPattern="colorPattern"
@@ -63,7 +75,11 @@ defineProps({
         location="Grenoble - France"
         locationIcon="i-flag:fr-4x3"
       >
-        <JobEntry role="Visitor Researcher" period="Oct. 2018 - Sept. 2019">
+        <JobEntry
+          :colorPattern="colorPattern"
+          role="Visitor Researcher"
+          period="Oct. 2018 - Sept. 2019"
+        >
           I worked on the
           <GradienLink
             :colorPattern="colorPattern"
