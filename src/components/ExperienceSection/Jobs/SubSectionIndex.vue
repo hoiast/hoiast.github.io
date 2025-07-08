@@ -88,7 +88,9 @@ defineProps({
             >pDynamo</GradienLink
           >
           library, migrating its codebase to Python 3 and implementing new
-          quantum chemistry calculation methods.
+          quantum chemistry calculation methods on molecular electronic
+          structure and molecular mechanics. Its codebase is built upon C,
+          Cython and Python.
         </JobEntry>
       </CompanyEntry>
     </div>
