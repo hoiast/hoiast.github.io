@@ -34,10 +34,10 @@ const colorPattern = ["#65B947", "#27548E"];
             and I don't intend to stop learning about these topics anytime soon.
           </p>
           <p>
-            Currently, I am interested about Fullstack Web Development and Data
-            Science. I am also a very social person and you may reach me easily
-            on Discord where we can talk about anything, but specially science,
-            technology, gaming, body art, veganism and politics.
+            Currently, I am interested about Software Engineering and System Design. 
+            I am also a very social person and you may reach me easily
+            on Discord and LinkedIn where we can talk about anything, but specially 
+            science, technology, gaming, body art, veganism and politics.
           </p>
         </div>
       </div>
