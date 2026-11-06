@@ -24,8 +24,22 @@ defineProps({
       >
         <JobEntry
           :colorPattern="colorPattern"
+          role="Software Engineer"
+          period="Jan. 2026 - Present"
+        >
+          Back to the code, I play a cross team function on software development, 
+          leading the backend chapter and supporting the embedded software team. 
+          As the main developer of a Gabriel's video platform built from scratch, 
+          I have to quickly adapt to different topics on video coding, perfomance, 
+          storage, network and edge-cloud architecture. It has been an delightful 
+          journey of collaboration with all technical and non-technical Gabriel's 
+          teams interested on delivering a multimedia experience to our customers 
+          and the public security authorities. 
+        </JobEntry>
+        <JobEntry
+          :colorPattern="colorPattern"
           role="Head of Engineering"
-          period="Jan. 2024 - Present"
+          period="Jan. 2024 - Dec. 2025"
         >
           I build, develop and manage cross field teams on mechanics,
           electronics, embedded software, computer vision, backend, frontend,
@@ -35,7 +49,7 @@ defineProps({
         </JobEntry>
         <JobEntry
           :colorPattern="colorPattern"
-          role="BackEnd Engineer"
+          role="Software Engineer"
           period="Jan. 2023 - Dec. 2023"
         >
           I am responsible for architecture, modelling and implementation of
