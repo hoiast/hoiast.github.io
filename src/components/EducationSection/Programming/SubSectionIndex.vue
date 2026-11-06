@@ -31,7 +31,10 @@ defineProps({
       >SCSS and CSS3 with Bootstrap, TailwindCSS and UnoCSS</GradientBulletEntry
     >
     <GradientBulletEntry :colorPattern="colorPattern"
-      >WebRTC, WebUSB, Websockets and MQTT</GradientBulletEntry
+      >WebRTC, HLS, RTSP and Video Coding using H264/H265</GradientBulletEntry
+    >
+    <GradientBulletEntry :colorPattern="colorPattern"
+      >WebUSB, Websockets and MQTT</GradientBulletEntry
     >
     <GradientBulletEntry :colorPattern="colorPattern"
       >Git with Github, GitLab and Bitbucket</GradientBulletEntry
@@ -47,7 +50,7 @@ defineProps({
       >AWS and GCP using Terraform and Atlantis</GradientBulletEntry
     >
     <GradientBulletEntry :colorPattern="colorPattern"
-      >Event scheduling with Bull and RabbitMQ</GradientBulletEntry
+      >Event scheduling with Bull, BullMQ and Kafka</GradientBulletEntry
     >
     <GradientBulletEntry :colorPattern="colorPattern"
       >Jira, Trello and Notion</GradientBulletEntry
